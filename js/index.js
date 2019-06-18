@@ -12,10 +12,15 @@ const nav = document.querySelector('header nav');
 
 nav.addEventListener('click', event => {
     event.target.textContent;
-    
+    event.stopPropagation();
     const title = document.querySelector('h1.logo-heading');
     title.textContent = event.target.textContent
 })
+nav.addEventListener('mouseleave', event => {
+    const title = document.querySelector('h1.logo-heading');
+    title.textContent = "Fun Bus!"
+})
+
 
 // IMG double-click event
 const IMG = document.querySelector('.content-section img');
@@ -52,4 +57,12 @@ const keyDown = document.addEventListener('keydown', key => {
     }
 })
 
-console.log(keyDown)
+// select event
+const select = document.querySelector('p');
+select.addEventListener('select', event => {
+    const selection = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
+    select.textContent = `You selected: ${selection}`;
+})
+console.log(select)
+
+// copy event
