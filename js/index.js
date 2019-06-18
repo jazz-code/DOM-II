@@ -17,8 +17,13 @@ nav.addEventListener('click', event => {
     title.textContent = event.target.textContent
 })
 
-// Nav scroll event
-const navA = document.querySelector('header nav a')[0];
+// IMG double-click event
+const IMG = document.querySelector('.content-section img');
 IMG.addEventListener('dblclick', event => {
-    IMG.classList.toggle('large')
+    event.target.style.transform = "scale(1.3)"
 })
+IMG.addEventListener('click', event => {
+    event.target.style.transform = "none"
+})
+
+console.log(IMG)
