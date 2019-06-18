@@ -266,6 +266,9 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+.home .content-section .img-content img .large {
+  transform: scale(1.3);
+}
 @media (max-width: 500px) {
   .home .content-section .img-content img {
     width: 100%;
