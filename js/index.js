@@ -45,8 +45,11 @@ bottomIMG.addEventListener('mouseleave', event => {
     bottomIMG.style.transform = "none"
 })
 
+// keydown event
+const keyDown = document.addEventListener('keydown', key => {
+    if (key.keyCode = true) {
+        alert('What do you need help with?')
+    }
+})
 
-console.log(bottomIMG)
-
-
-
+console.log(keyDown)
